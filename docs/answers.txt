@@ -1,0 +1,49 @@
+Git Lab Tutorials: 10/25/2024
+GitHub Account created: August, 2020
+
+
+1.
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+2.
+$ git rev-list --count HEAD
+9
+
+3.
+$ git log -p -- README.md
+commit 50e99344e3b23b0a2f1588aef51af27aa7b10ec8
+Author: Andrew Mack <andrewmack13@gmail.com>
+Date:   Fri Oct 25 17:57:18 2024 -0400
+
+4.
+1. Branches are used to isolate changes
+2. Branches are used to manage workflow
+
+5.
+git log displays the history of commits, git status shows the current branch vs the origin
+
+6.
+$ git log -p Vehicle.h
+
+7.
+$ git log --grep="file"
+
+8.
+I. Allows a child to inherit properties and methods from a parent.
+II. Enables objects of different classes to respond to the same method call in different ways depending on their type.
+III. Data and methods are housed within a single class to protect data integrity and control access to it.
+
+9.
+In a "Dictator and Lieutenants" workflow, Everyone makes pulls from the central repository and push changes to the assigned lietenant repository.
+Then the Lietenant repositories are merged to the Dictator repository and only the dictator can push to it. 
+While in a "Integration Manager" workflow, each developer has a public and private repository and 
+makes pushes to their public repository and pull from the central repository. 
+An Integration Manager then resolves conflicts and pushes to the central repository. 
+
+10.
+A team of 100 developers would benefit from a "Dictator and Lieutenants" workflow over a "Centralized" workflow
+since there would be a branch for every developer's changes. This would lead to countless conflicts as each 
+developer implemented changes. With a Dictator and Lieutenant workflow, the conflicts would be lessened. 
